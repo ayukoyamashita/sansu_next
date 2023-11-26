@@ -1,5 +1,6 @@
 import {Metadata} from 'next'
 import Link from 'next/link'
+import Tenkey from '../components/Tenkey'
 
 export const metadata: Metadata = {
   title: 'hoge page',
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">hogeHello, Next.js!</h1>
+      <Tenkey />
       <Link href="/dashboard">Dashboard</Link>
     </>
   )
