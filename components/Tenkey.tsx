@@ -1,16 +1,24 @@
+'use client'
+import * as React from "react";
+import {NextUIProvider} from "@nextui-org/react";
+import {Button} from "@nextui-org/react";
+
 function Tenkey() {
 
   return (
-    <div className="text-2xl">
-      <div className="tenkey_numbers">
-        {[...Array(9)].map((v, i) => <button type="button" className="key" key={i + 1} value={i + 1}>{i + 1}</button>)}
-        <button type="button" className="key" key={0} value={0}>{0}</button>
+    <NextUIProvider>
+      <div className="text-2xl">
+        <div className="tenkey_numbers">
+          {[...Array(9)].map((v, i) => <Button className="key" key={i + 1}
+                                               value={i + 1}>{i + 1}</Button>)}
+          <Button color="default" key={0} value={0}>{0}</Button>
+        </div>
+        <div className="tenkey_other">
+          <Button className="delete" value="x">けす</Button>
+          <Button className="answer" value="answer">けってい</Button>
+        </div>
       </div>
-      <div className="tenkey_other">
-        <button type="button" className="delete" value="x">けす</button>
-        <button type="button" className="answer" value="answer">けってい</button>
-      </div>
-    </div>
+    </NextUIProvider>
   );
 }
 

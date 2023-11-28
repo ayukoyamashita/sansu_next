@@ -1,4 +1,4 @@
-import { M_PLUS_1p } from "next/font/google";
+import {M_PLUS_1p} from 'next/font/google';
 import './globals.css'
 
 const Font = M_PLUS_1p({

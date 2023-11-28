@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <Tenkey />
+      <Tenkey/>
       <Link href="/dashboard">Dashboard</Link>
     </>
   )
