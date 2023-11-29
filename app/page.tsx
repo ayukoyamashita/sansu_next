@@ -1,6 +1,6 @@
 import {Metadata} from 'next'
 import Link from 'next/link'
-import Tenkey from '../components/Tenkey'
+import SansuLayout from "../components/SansuLayout";
 
 export const metadata: Metadata = {
   title: 'hoge page',
@@ -8,9 +8,8 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <>
-      <Tenkey/>
-      <Link href="/dashboard">Dashboard</Link>
-    </>
+    <div className="light">
+      <SansuLayout/>
+    </div>
   )
 }

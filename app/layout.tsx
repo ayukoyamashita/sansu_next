@@ -2,7 +2,7 @@ import {M_PLUS_1p} from 'next/font/google';
 import './globals.css'
 
 const Font = M_PLUS_1p({
-  weight: "500",
+  weight: "800",
   subsets: ["latin"],
 });
 
@@ -13,7 +13,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-    <body className={Font.className}>{children}</body>
-    </html>
+    <body className={Font.className}>{children}</body></html>
   )
 }
