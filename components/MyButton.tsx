@@ -4,13 +4,15 @@ import * as React from "react";
 type TProps = {
   text: string | number,
   value: string | number,
-  clazz?: string
+  clazz?: string,
+  color?: "primary" | "default" | "secondary" | "success" | "warning" | "danger",
+  variant?: "flat" | "ghost" | "solid" | "bordered" | "light" | "faded" | "shadow"
 }
 
-const MyButton: React.FC<TProps> = ({text, value, clazz = ''}) => {
+const MyButton: React.FC<TProps> = ({text, value, clazz = '', color = 'primary', variant = 'flat'}) => {
   const clazzName = "h-20 text-4xl " + clazz;
   return (
-    <Button size="lg" color="primary" className={clazzName} value={value}>{text}</Button>
+    <Button size="lg" variant={variant} color={color} className={clazzName} value={value}>{text}</Button>
   )
 };
 

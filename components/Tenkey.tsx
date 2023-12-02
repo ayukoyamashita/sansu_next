@@ -6,7 +6,7 @@ function Tenkey() {
   return (
     <div className="w-80">
       <div className="flex flex-wrap justify-between gap-4 mb-6">
-        {[...Array(9)].map((v, i) =>
+        {[...Array(9)].map((_, i) =>
           <MyButton text={i + 1} value={i + 1} key={i} />
           )
         }
@@ -14,7 +14,7 @@ function Tenkey() {
         <MyButton text="けす" value="delete" clazz="flex-1" />
       </div>
       <div className="tenkey_other">
-        <MyButton text="けってい" value="answer" clazz="w-full" />
+        <MyButton text="けってい" variant="solid" value="answer" clazz="w-full" />
       </div>
     </div>
   );
