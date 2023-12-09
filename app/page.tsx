@@ -1,6 +1,6 @@
 import {Metadata} from 'next'
 import Link from 'next/link'
-import SansuLayout from "../components/SansuLayout";
+import SansuRoot from "../components/SansuRoot";
 
 export const metadata: Metadata = {
   title: 'hoge page',
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <div className="light">
-      <SansuLayout/>
+      <SansuRoot/>
     </div>
   )
 }
