@@ -1,4 +1,4 @@
-import TQuestion from "../ types/TQuestion";
+import TQuestion from ".././types/TQuestion";
 
 function getRandomInt(max: number) {
   return Math.floor(Math.random() * (max - 1)) + 1;

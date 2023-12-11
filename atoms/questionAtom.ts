@@ -1,5 +1,5 @@
 import {atom} from 'recoil';
-import TQuestion from "../ types/TQuestion";
+import TQuestion from ".././types/TQuestion";
 
 export const questionAtom = atom<TQuestion>({
   key: 'questionAtom',

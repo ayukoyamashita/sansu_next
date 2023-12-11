@@ -1,18 +1,18 @@
 import {Button} from "@nextui-org/react";
 import * as React from "react";
 import {useRecoilValue} from "recoil";
-import {EStatus, statusAtom} from "../atoms/statusAtom";
+import {EStatus, statusAtom} from "../../atoms/statusAtom";
 
 type TProps = {
   text: string | number,
-  value: number | 'delete' | 'answer' | 'next',
+  value: number | string,
   clazz?: string,
   color?: "primary" | "default" | "secondary" | "success" | "warning" | "danger",
   variant?: "flat" | "ghost" | "solid" | "bordered" | "light" | "faded" | "shadow",
-  onClickButton: (command: number | 'delete' | 'answer' | 'next') => void
+  onClickButton: (command: number | string) => void
 }
 
-const MyButton: React.FC<TProps> = ({
+const DefaultButton: React.FC<TProps> = ({
                                       text,
                                       value,
                                       clazz = '',
@@ -34,4 +34,4 @@ const MyButton: React.FC<TProps> = ({
   )
 };
 
-export default MyButton;
+export default DefaultButton;

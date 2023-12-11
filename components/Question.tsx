@@ -4,7 +4,7 @@ import {questionAtom} from "../atoms/questionAtom";
 import {EStatus, statusAtom} from "../atoms/statusAtom";
 import {answerAtom} from "../atoms/answerAtom";
 import {currentIndexAtom} from "../atoms/currentIndexAtom";
-import TQuestion from "../ types/TQuestion";
+import TQuestion from ".././types/TQuestion";
 
 const Question = () => {
   const question = useRecoilValue(questionAtom);
