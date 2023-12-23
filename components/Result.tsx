@@ -63,7 +63,7 @@ const Result = () => {
             <img src={scoreImages[correctNum].src} alt={`${correctNum * 10}点`} className="m-auto h-56" />
           </p>
           <p className="mb-10">
-            <img src={commentImage().src} alt="とてもいいね" className="m-auto h-16" />
+            <img src={commentImage().src} alt="" className="m-auto h-16" />
           </p>
 
           <ol className="inline-block">
@@ -91,7 +91,7 @@ const Result = () => {
       )}
 
       <div>
-        <Button href="../" as={Link} color="primary" size="lg">もういちどチャレンジ</Button>
+        <Button href="./" as={Link} color="primary" size="lg">もういちどチャレンジ</Button>
       </div>
     </main>
   )
