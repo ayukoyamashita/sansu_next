@@ -14,7 +14,7 @@ const ResultButton: React.FC = () => {
 
   const saveResult = () => {
     localStorage.setItem('result', JSON.stringify(history));
-    location.href = '/result';
+    location.href = 'result';
   }
 
   return (
