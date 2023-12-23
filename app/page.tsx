@@ -3,7 +3,7 @@ import Link from 'next/link'
 import SansuRoot from "../components/SansuRoot";
 
 export const metadata: Metadata = {
-  title: 'hoge page',
+  title: 'かけざんチャレンジ',
 }
 
 export default function Page() {

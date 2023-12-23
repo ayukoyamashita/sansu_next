@@ -35,7 +35,7 @@ const Settings = () => {
         </div>
 
         <div className="flex justify-center gap-3">
-          <Button href="/" as={Link}color="primary" size="lg">戻る</Button>
+          <Button href="/" as={Link} color="primary" size="lg">戻る</Button>
           <Button color="danger" size="lg">成績のリセット</Button>
         </div>
       </div>

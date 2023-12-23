@@ -16,6 +16,7 @@ const AnswerButton = () => {
   const [history, setHistory] = useRecoilState(historyAtom);
 
   const handleClick = () => {
+    if (!answer) return;
     setStatus(EStatus.JUDGING);
     const his = {
       question: question,

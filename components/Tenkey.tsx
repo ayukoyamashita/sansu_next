@@ -10,6 +10,8 @@ import THistory from "../types/THistory";
 import NextButton from "./button/NextButton";
 import AnswerButton from "./button/AnswerButton";
 import DeleteButton from "./button/DeleteButton";
+import ResultButton from "./button/ResultButton";
+import {QUESTION_COUNT} from "../ts/Settings";
 
 const Tenkey = () => {
   const question = useRecoilValue(questionAtom);
@@ -35,7 +37,8 @@ const Tenkey = () => {
       </div>
       <div className="tenkey_other">
         {status === EStatus.ANSWERING && <AnswerButton/>}
-        {status === EStatus.JUDGING && <NextButton/>}
+        {status === EStatus.JUDGING && currentIndex < QUESTION_COUNT && <NextButton/>}
+        {status === EStatus.JUDGING && currentIndex === QUESTION_COUNT && <ResultButton/>}
       </div>
     </div>
   );
